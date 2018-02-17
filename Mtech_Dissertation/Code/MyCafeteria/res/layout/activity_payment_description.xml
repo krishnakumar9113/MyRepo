@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginBottom="10dp"
+     android:layout_marginRight="10dp"
+    android:orientation="vertical" >
+
+  <!--   <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of items"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+--> 
+   
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Amount"
+          android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+         android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+          android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+           android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+   
+    
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UserName/EmployeeID"
+          android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+           android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+           android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+ 
+     <Button
+        android:id="@+id/pay_wallet"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+          android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Pay using MyWallet" />
+
+    <Button
+        android:id="@+id/pay_online"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="5dp"
+        android:text="Pay Online" />
+
+</LinearLayout>

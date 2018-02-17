@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+   
+    <item android:id="@+id/cart"
+          android:icon="@drawable/cart"
+          android:title="Cart" 
+             yourapp:showAsAction="ifRoom|withText"/>
+    
+     <item android:id="@+id/addtocart"
+          android:icon="@drawable/add"
+          android:title="Add to cart"
+             yourapp:showAsAction="never"
+          />
+    <item android:id="@+id/removefromfav"
+          android:icon="@drawable/cart"
+          android:title="Remove from favorite" 
+             yourapp:showAsAction="never"/>
+    <item android:id="@+id/savefav"
+          android:icon="@drawable/cart"
+          android:title="Save favorites" 
+             yourapp:showAsAction="never"/>
+</menu>

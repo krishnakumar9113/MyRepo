@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 24, 2014 11:17:39 AM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping package="com.mycafeteria.bean">
+    <class name="Order" table="orderdetails" >
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="Amount"  type="java.lang.Double">
+            <column name="amount" precision="6" scale="2" />
+        </property>
+        <property name="Items_count" type="string">
+            <column name="itemscount" length="100" />
+        </property>
+         <property name="SecretCode" type="string">
+            <column name="secretcode" length="100" />
+        </property>
+       
+         <property name="Userid" type="java.lang.Integer">
+            <column name="userid"  />
+        </property>
+        <property name="VendorID" type="java.lang.Integer">
+            <column name="vendorid"  />
+        </property>
+          <property name="Status" type="string">
+            <column name="orderstatus" length="100" />
+        </property>
+         <property name="TimeStamp" type="string">
+            <column name="timestamp" length="100" />
+        </property>
+              
+    </class>
+</hibernate-mapping>

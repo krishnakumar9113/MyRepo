@@ -1,0 +1,371 @@
+<head>
+
+<style>
+.btnEnabled {
+	background: #6db33f;
+	color: #ffffff;
+	width: 92px;
+	height: 24px;
+	font-family: Proxima Nova Alt Sbold;
+	font-size: 12px;
+	-moz-box-shadow: 0 2px 0px 0px #387c2c;
+	-webkit-box-shadow: 0 2px 0px 0px #387c2c;
+	box-shadow: 0px 2px 0px 0px #387c2c;
+	/* For IE 8 */
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#387c2c')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
+		Color='#387c2c');
+	border-top-left-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+	border-color: #387c2c;
+	border-width: 0px;
+}
+
+.btnEnabled:hover {
+	background: #7ccc47;
+	color: #ffffff;
+	width: 92px;
+	height: 24px;
+	font-family: Proxima Nova Alt Sbold;
+	font-size: 12px;
+	-moz-box-shadow: 0 2px 0px 0px #387c2c;
+	-webkit-box-shadow: 0 2px 0px 0px #387c2c;
+	box-shadow: 0px 2px 0px 0px #387c2c;
+	/* For IE 8 */
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#387c2c')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
+		Color='#387c2c');
+	border-top-left-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+	border-color: #387c2c;
+	border-width: 0px;
+}
+
+#tabOverview {
+	font-family: Proxima Nova Alt Sbold;
+	font-size: 14px;
+	color: #50b3cf;
+	background: #fff;
+	border: 1px solid #50b3cf;
+	border-bottom-color: #fff;
+	height: 30px;
+	width: 100px;
+	margin-left: 30px;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+.cancelbtnEnabled {
+	background: #8c8c8c;
+	color: #ffffff;
+	width: 92px;
+	height: 24px;
+	font-family: Proxima Nova Alt Sbold;
+	font-size: 12px;
+	-moz-box-shadow: 0 2px 0px 0px #555555;
+	-webkit-box-shadow: 0 2px 0px 0px #555555;
+	box-shadow: 0px 2px 0px 0px #555555;
+	/* For IE 8 */
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
+		Color='#555555');
+	border-top-left-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+	border-color: #555555;
+	border-width: 0px;
+}
+
+.cancelbtnEnabled:hover {
+	background: #999;
+	color: #ffffff;
+	width: 92px;
+	height: 24px;
+	font-family: Proxima Nova Alt Sbold;
+	font-size: 12px;
+	-moz-box-shadow: 0 2px 0px 0px #555555;
+	-webkit-box-shadow: 0 2px 0px 0px #555555;
+	box-shadow: 0px 2px 0px 0px #555555;
+	/* For IE 8 */
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
+		Color='#555555');
+	border-top-left-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+	border-color: #555555;
+	border-width: 0px;
+}
+
+.form-control:hover {
+	background-color: #e1eff2;
+	border-color: #9bc4cd;
+}
+
+.form-control, .editpage {
+	font-family: Proxima Nova Alt Reg;
+	font-size: 12px;
+	color: #55555;
+}
+
+.tabs-header {
+	border-color: #50b3d0;
+	background-color: transparent;
+	border-width: 0;
+	border-bottom-width: 0;
+	padding: 0;
+	background-color: transparent;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0 10px;
+}
+
+.Names {
+	font-weight: 500;
+	padding-left: 250px;
+	vertical-align: top;
+}
+
+.DataInputs {
+	padding-left: 5%;
+	width: auto;
+}
+
+.tabs {
+	border-color: #50b3d0;
+	padding: 0;
+	border-width: 0;
+}
+
+.tabs li {
+	margin: 0;
+}
+
+.editNameClass {
+	text-decoration: underline;
+	cursor: pointer;
+	padding-left: 5px;
+}
+
+.tabs li a.tabs-inner {
+	color: #50b3cf;
+	background-color: #50b3cf;
+	background: -webkit-linear-gradient(top, white 0, white 100%);
+	background: -moz-linear-gradient(top, white 0, white 100%);
+	background: -o-linear-gradient(top, white 0, white 100%);
+	background: linear-gradient(to bottom, white 0, white 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=white,
+		endColorstr=white, GradientType=0);
+	border-color: white;
+	font-family: Proxima Nova Alt Sbold;
+}
+
+.DataInputs {
+	padding-left: 5%;
+	width: auto;
+}
+
+.form-control {
+	width: 175px;
+	height: 24px;
+}
+
+.tabs {
+	border-color: #50b3d0;
+	padding: 0;
+	border-width: 0;
+}
+
+#ulModulesForEdit {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ulModulesCheckBoxClass {
+	margin-right: .25em;
+}
+
+.ulModulesLiClass {
+	border: 1px transparent solid;
+	display: inline-block;
+	width: 12em;
+}
+
+.ulModulesLabelClass {
+	margin-left: 10px;
+}
+
+.ulUsersLabelClass {
+	margin-left: 10px;
+	width: 200px;
+	word-wrap: break-word;
+}
+
+
+.ulUsersLiClass {
+	border: 1px transparent solid;
+}
+</style>
+
+<link href="css/index.css" rel="stylesheet">
+<!-- <script type="text/javascript" src="js/jquery.easyui.min.js"></script> -->
+<script src="lib/angular/bootstrap-3.1.1.min.js"></script>
+
+</head>
+<div ng-controller="HomeController" ng-init="loadcreatevendor()">
+	<div class="col-lg-12 col-md-12" style="padding: 10px 10px 0px 10px">
+		<div class="col-lg-8 col-md-8">
+			<label
+				style="font-size: 20px; font-family: Semibold; font-weight: 0; color: #555555;">Add
+				Vendor</label>
+		</div>
+		<div class="col-lg-4 col-md-4">
+			<div class="col-lg-4 col-md-4"></div>
+			<div class="col-lg-3 col-md-3">
+				<button class="btnEnabled" style="width: 55px" 
+					 ng-click="createVendor();">Create</button>
+				<div style="width: 650px">
+					<br> <label id="msgWaitLabel" style="margin-left: 10px"></label>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5">
+				<button href="/admin" class="cancelbtnEnabled"
+					ng-click="cancel();" style="width: 55px"
+					>Cancel</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="col-lg-12 col-md-12">
+		<div style="margin-left: 4%" class="col-lg-11 col-md-11">
+
+			
+					<br />
+					<div class="col-lg-12 col-md-12"
+						style="border: 1px solid #ccc; height: 100%; margin: 10px 10px 40px; width: 100%; background: rgb(228, 228, 228);">
+
+
+						<div class="col-lg-12 col-md-12">
+
+							<div class="col-lg-11 col-md-11">
+								<form class="ng-pristine ng-invalid ng-invalid-required"
+									name="vendorcreateform" novalidate>
+									<div class="col-lg-10 col-md-10"
+										style="margin-top: 30px; margin-bottom: 10px;">
+										<div class="col-lg-2 col-md-2">
+											<label
+												style="font-size: 12px; font-family: Proxima Nova Alt Reg; font-weight: 0; color: #555555;">Vendor Name
+												</label> 
+										</div>
+										<div class="col-lg-4 col-md-4">
+											
+												<input class="form-control ng-pristine ng-invalid ng-invalid-required"
+												ng-model="selectedcreateVendor.name" name="vendorname"
+												style="width: 250px; height: 30px;" required type="text">
+											<span style="color:red" ng-show="vendorcreateform.vendorname.$dirty &&vendorcreateform.vendorname.$invalid">
+											<label style="color: Red;" class="error ng-hide"
+												ng-show="vendorcreateform.vendorname.$error.required">Enter
+												Vendor Name </label>
+												
+												</span>
+										</div>
+									
+									</div>
+									
+									
+									
+									<div class="col-lg-10 col-md-10"
+										style="margin-top: 30px; margin-bottom: 10px;">
+										<div class="col-lg-2 col-md-2">
+											<label
+												style="font-size: 12px; font-family: Proxima Nova Alt Reg; font-weight: 0; color: #555555;">Mail ID
+												</label> 
+										</div>
+										<div class="col-lg-4 col-md-4">
+											 <!-- onkeyup="IsAlphaNumeric(this)" -->
+												<input name="vendormail" class="form-control ng-pristine ng-invalid ng-invalid-required"
+												ng-model="selectedcreateVendor.mail"
+												style="width: 250px; height: 30px;" required type="email">
+											<span style="color:red" ng-show="vendorcreateform.vendormail.$dirty && vendorcreateform.vendormail.$invalid">
+											<label style="color: Red;" class="error ng-hide"
+												ng-show="vendorcreateform.vendormail.$error.required">Enter
+												Vendor MailID </label>
+												<label style="color: Red;" class="error ng-hide"
+												ng-show="vendorcreateform.vendormail.$error.email">Enter
+												valid mailID</label>
+												
+												</span>
+										</div>
+									
+									</div>
+									
+									
+									
+									
+
+									<div class="col-lg-10 col-md-10" style="margin-top: 30px;margin-bottom: 10px;">
+										<div class="col-lg-2 col-md-2">
+											<label
+												style="font-size: 12px; font-family: Proxima Nova Alt Reg; font-weight: 0; color: #555555;">Location 
+												</label>
+										</div>
+										<div class="col-lg-7 col-md-7">
+											<select id="locid" name="locId" class="form-control"
+												ng-model="selectedloc"
+												style="width: 160px; float: left; height: 25pt;"
+												ng-options="loc.location for loc in locationdata"></select>
+											<!-- 	ng-options="loc.id as loc.name for loc in locationdata"></select>
+												
+											<button type="submit" id="btnAddDomain" class="btnEnabled"
+												value="Add Domain" ng-click="newlocationmodalInstance()"
+												style="margin-left: 10px;">Add Location</button> -->
+
+										</div>
+										
+
+									</div>
+									
+									
+									
+
+								</form>
+							</div>
+						</div>
+					</div>
+				<!-- </div>
+
+
+		
+			</div>
+ -->
+		</div>
+	</div>
+
+	
+</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="css/icon.css">
+<link rel="stylesheet" type="text/css"
+	href="http://www.jeasyui.com/easyui/demo/demo.css">
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>

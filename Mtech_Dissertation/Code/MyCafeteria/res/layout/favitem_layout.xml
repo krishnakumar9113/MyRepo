@@ -1,0 +1,77 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:rowCount="1"
+    tools:context=".ItemLevelListActivity" >
+
+    <GridLayout
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:rowCount="2" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="top|center_vertical"
+            android:layout_row="0"
+            android:gravity="center"
+            android:paddingBottom="5sp"
+            android:paddingLeft="8sp"
+            android:paddingTop="5sp"
+            android:text="n"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vendorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="bottom|center_vertical"
+            android:layout_row="1"
+            android:gravity="center"
+            android:paddingBottom="5sp"
+            android:paddingLeft="8sp"
+            android:paddingTop="5sp"
+            android:text="h"
+            android:textSize="12sp"
+            android:textStyle="bold"  />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_column="3"
+        android:layout_gravity="end"
+        android:layout_row="0"
+        android:gravity="center"
+        android:paddingBottom="5sp"
+        android:paddingEnd="8sp"
+        android:paddingRight="8sp"
+        android:paddingTop="5sp"
+        android:text="20.00"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_column="0"
+        android:layout_gravity="start"
+        android:layout_row="0"
+        android:gravity="center"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp" />
+
+</GridLayout>

@@ -1,0 +1,58 @@
+#leftpaneldiv{
+	
+	
+}
+#testlabmenu{
+	padding:5px 0 5px 0;
+	background-color: #50b3d0;
+}
+
+.tree-node {
+  height: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  color:#555555;
+  }
+.tree-title {
+	
+  font-family:Proxima Nova Alt Sbold;
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 0 2px;
+  height: 18px;
+  line-height: 18px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.tree-node-selected {
+  background:#ffffff;
+  color:#50b3cf;
+  border-right:4px solid #6db33f;
+  
+}
+.tree-expanded {
+  background: url('images/tree_icons.png') no-repeat -18px 0px;
+   position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.tree-collapsed {
+  background: url('images/tree_icons.png') no-repeat 0px 0px;
+   position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#divCreateFolder,#divEditFolder,#divDelete,#divRefresh,#divCollapseAll,#divExpandAll{
+	  
+  }
+

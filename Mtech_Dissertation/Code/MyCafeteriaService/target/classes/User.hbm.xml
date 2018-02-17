@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 24, 2014 11:17:39 AM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping package="com.mycafeteria.bean">
+    <class name="User" table="user" >
+        <id name="userid" type="java.lang.Integer">
+            <column name="userid" />
+            <generator class="identity" />
+        </id>
+        <property name="UserName" type="string">
+            <column name="username" length="100" />
+        </property>
+         <property name="Password" type="string">
+            <column name="password" length="100" />
+        </property>
+         <property name="DeclaredAmount" type="java.lang.Double">
+            <column name="declaredamount" precision="6" scale="2" />
+        </property>
+         <property name="AvailableBalance" type="java.lang.Double">
+            <column name="availablebalance" precision="6" scale="2" />
+        </property>
+         <property name="mailid" type="string">
+            <column name="mailid" length="100" />
+        </property>
+        <property name="Favs" type="string">
+            <column name="favorites" length="100" />
+        </property>
+         <property name="auth_token" type="string">
+            <column name="token" length="100" />
+        </property>
+       
+              
+    </class>
+</hibernate-mapping>

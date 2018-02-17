@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="MyCafeteria">
+
+
+<script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<link rel="stylesheet" type="text/css" href="css/angular.treeview.css">
+ <link rel="stylesheet" type="text/css"
+	href="css/easyui.css">
+	<link rel="stylesheet" type="text/css"
+	href="css/demo.css">
+	
+	<link rel="stylesheet" type="text/css"
+	href="css/icon.css">
+ <link rel="styleSheet" href="release/ui-grid-unstable.css" />
+<link href="css/bootstrap-3.1.1.min.css" rel="stylesheet">
+<style>
+#mydiv {  
+    position:absolute;
+     top:0;
+    left:0; 
+    margin: auto auto;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    background-color:grey;
+    opacity: .8;
+    display:none;
+ }
+
+.ajax-loader {
+    position: absolute;
+     left: 40%;
+    top: 30%; 
+    display: block;     
+}
+
+</style>
+  <head>
+    <meta charset="utf-8" />
+    <title>MyCafeteria-Admin and Vendor Console</title>
+   
+  </head>
+
+  <body>
+  <div id="mydiv">
+    <img src="img/ajax-loader.gif" class="ajax-loader"/>
+</div>
+  <div>
+  <div class="col-lg-12">
+  <div class="col-lg-9">
+  	<p>MyCafeteria-Admin and Vendor Console</p>
+  </div>
+  	<div class="col-lg-3" ng-controller="LoginController">  	
+  	<a href="#/login"  id ="logout_btn" style="visibility: hidden;" ng-click="logout()" ui-sref="login"><img  style="margin-right:5px;" src="img/logout.png">Logout</a>
+  </div>
+  </div>
+   <p style="visibility: hidden;">.</p>
+  </div>
+ 
+    <!-- <div class="jumbotron" style="padding-top:0px;padding-bottom: 10px"> -->
+    <div class="jumbotron" style="padding-top:10px;padding-bottom:10px">
+      <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="lib/angular/angular-cookies.js"></script>
+    <script src="lib/angular/angular-touch.js"></script>
+    <script src="lib/angular/angular-animate.js"></script>
+    <script src="lib/angular/ui-bootstrap-tpls-0.11.2.js"></script>
+	<script src="lib/angular/bootstrap-3.1.1.min.js"></script>
+	   <script src="lib/ui-grid/csv.js"></script>
+    <script src="lib/ui-grid/pdfmake.js"></script>
+    <script src="lib/ui-grid/vfs_fonts.js"></script>
+<script src="release/ui-grid-unstable.js"></script>
+ 
+    <script src="scripts/app.js"></script>
+    <script src="modules/authentication/services.js"></script>
+    <script src="modules/authentication/controller.js"></script>
+    <script src="modules/home/controller.js"></script>
+      <script src="modules/vendor/controller.js"></script>
+   
+   
+    
+  </body>
+
+</html>

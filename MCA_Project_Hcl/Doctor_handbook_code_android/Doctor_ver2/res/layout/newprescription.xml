@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+	android:layout_height="fill_parent"  
+	 android:layout_gravity="left" android:layout_width="fill_parent" >
+	                          
+	                         <TextView android:layout_width="fill_parent"  android:id="@+id/patientname" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:textSize="20dp" android:text="PATIENT ID &amp; NAME"/>
+	                         <EditText android:text="" android:id="@+id/EditTextptname" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText><TextView android:id="@+id/date" android:text="DATE"   android:layout_height="wrap_content" android:layout_width="fill_parent"  android:textSize="20dp" android:layout_marginTop="3dp"/>
+	                         <DatePicker android:id="@+id/DatePicker01" android:layout_width="wrap_content" android:layout_height="wrap_content"></DatePicker><TextView android:text="DISEASE" android:layout_height="wrap_content" android:id="@+id/disease" android:textSize="20dp" android:layout_width="fill_parent" android:layout_marginTop="3dp"></TextView>
+	                         <EditText android:text="" android:id="@+id/EditTextdis" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText><TextView android:id="@+id/prescription"   android:layout_height="wrap_content" android:text="PRESCRIPTION" android:layout_width="fill_parent" android:textSize="20dp" android:layout_marginTop="3dp"/>
+
+<EditText android:id="@+id/EditTextpres" android:layout_width="fill_parent" android:layout_height="match_parent"></EditText>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+         
+  <!--    <property name="hibernate.connection.url">jdbc:mysql://mycafeteria.cpjxu86us7pm.ap-southeast-1.rds.amazonaws.com:3306/mycafeteria</property> 
+     <property name="hibernate.connection.username">root</property>
+   <property name="hibernate.connection.password">bitswilp</property>  -->
+   
+   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mycafeteria</property>
+    <property name="hibernate.connection.username">root</property>
+			<property name="hibernate.connection.password">root</property> 
+     <!-- Drop and re-create the database schema on startup -->
+    <!--<property name="hibernate.hbm2ddl.auto">update</property>
+    Enable Hibernate's automatic session context management
+    <property name="current_session_context_class">thread</property>
+    Disable the second-level cache 
+    <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property> 
+    <property name="show_sql">true</property>-->
+    <property name="hibernate.enable_lazy_load_no_trans">true</property>   
+    <property name="connection.pool_size">1</property> 
+    <mapping resource="Location.hbm.xml"/>
+   	<mapping resource="Vendor.hbm.xml"/>
+   	<mapping resource="VendorMobile.hbm.xml"/>
+   	<mapping resource="Item.hbm.xml"/>
+   	<mapping resource="Category.hbm.xml"/>
+   	<mapping resource="Order.hbm.xml"/>
+     <mapping resource="User.hbm.xml"/>
+      <mapping resource="Admin.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

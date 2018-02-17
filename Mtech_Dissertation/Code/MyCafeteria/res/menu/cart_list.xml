@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/removefromcart"
+          android:icon="@drawable/remove"
+          android:title="Remove from cart"
+             yourapp:showAsAction="ifRoom|withText"
+          />
+    <item android:id="@+id/pay"
+          android:icon="@drawable/pay"
+          android:title="Pay" 
+             yourapp:showAsAction="ifRoom|withText"/>
+</menu>

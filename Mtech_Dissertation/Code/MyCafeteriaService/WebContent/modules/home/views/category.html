@@ -1,0 +1,64 @@
+<style>
+#tabOverview{
+	font-family:Proxima Nova Alt Sbold;font-size: 14px;color:#50b3cf;background:#fff;border: 1px solid #50b3cf;
+	border-bottom-color:#fff;height:30px;width:100px;margin-left:30px;padding-left: 20px;padding-top: 5px;
+}
+#lnkAddvendor{
+		background:#6db33f;color:#ffffff;width:92px;height:24px;font-family:Proxima Nova Alt Sbold;font-size: 12px;
+    	-moz-box-shadow: 0 10px 10px -5px #387c2c;-webkit-box-shadow: 0 10px 10px -5px #387c2c;box-shadow: 0 10px 10px -5px #387c2c;
+		/* For IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#387c2c')";
+		/* For IE 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#387c2c');
+}
+.table
+{
+background:linear-gradient(to bottom,#F9F9F9 0,#efefef 100%);
+margin-bottom:0;
+}
+.boolStatusMsgTrue{
+	color: rgba(0, 0, 0, 0);background:url('css/icons/ok.png') no-repeat center center;cursor:pointer;
+}
+.boolStatusMsgFalse{
+	color: rgba(0, 0, 0, 0);background:url('css/icons/cross.png') no-repeat center center;cursor:pointer;
+}
+.editNameClass{
+	text-decoration: underline;cursor:pointer; padding-left:5px;
+}
+</style>
+
+<div ng-controller="HomeController" ng-init="loadcategorydetails()">
+<div >
+		<h4 style="font-family:Proxima Nova Alt Sbold;font-size: 18px;color:#555555;  padding: 10px 0px 10px 25px;">List of Categories</h4>
+	</div>
+	
+<div style="margin-bottom:20px;height:30px;margin-left:15px;width:90%;">
+	
+	<a href="#/admin" id="lnkAddvendor" class="easyui-linkbutton" >Vendor List</a>
+	<a href="#/location" id="lnkAddvendor" class="easyui-linkbutton" >Location List</a>
+		<a  id="lnkAddvendor"   style="background:#6699FF;box-shadow:0 10px 10px -5px #6699FF;float: right;" class="easyui-linkbutton" ng-click="newcategorymodalInstance()">Add Category</a>
+  <!--   <a style="margin-left:15px" href="#/login" class="easyui-linkbutton" >Logout</a> -->
+	</div>
+
+	 <div >       
+	  <div class="vendorgrid" ui-grid="categorygridOptionsComplex" ui-grid-pagination ui-grid-edit ui.grid.rowEdit  ui-grid-move-columns ui-grid-auto-resize></div> 
+         </div>
+      * Note : Deleting a category will delete all items under that category with all vendors and subsequent items from orders with expired status.
+	</div>
+	
+<script type="text/javascript">	
+		function formatDateInfo(val, row){
+			if(val!=null){
+				var date = new Date(val+' UTC');
+				var mth=date.getUTCMonth()+1;
+				var dateValue = ''	+ date.getUTCFullYear() + '-' + (date.getUTCMonth()+1) + '-'
+				+ date.getUTCDate() + ' '
+				+ date.getUTCHours() + ':'
+				+ date.getUTCMinutes() + ':'
+				+ date.getUTCSeconds();
+			   return dateValue;
+			}
+		}
+    </script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>

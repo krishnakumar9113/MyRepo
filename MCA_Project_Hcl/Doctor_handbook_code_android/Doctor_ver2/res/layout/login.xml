@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+	<ImageView android:id="@+id/ImageView04" android:layout_height="75dp" android:adjustViewBounds="true" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/stethoscope" android:layout_width="100dp"></ImageView><TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:textSize="20dp" android:text="E-KNOWLEDGE WIRELESS HEALTH CARE SYSTEM" android:layout_width="match_parent" android:layout_marginTop="-77dp" android:layout_marginLeft="110dp"></TextView><ImageView android:id="@+id/ImageView03" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView><ImageView android:id="@+id/ImageView02" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView><ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView><TextView android:id="@+id/TextView02" android:layout_height="wrap_content" android:text="Doctor Name" android:textSize="25dp" android:layout_width="fill_parent" android:layout_marginTop="30dp"></TextView><EditText android:id="@+id/EditText01" android:layout_height="wrap_content" android:text="" android:layout_width="fill_parent" android:layout_marginTop="10dp"></EditText><TextView android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password" android:textSize="25dp"></TextView>
+      
+
+
+<EditText android:id="@+id/EditText02" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_width="fill_parent" android:inputType="textPassword"></EditText>
+
+
+
+<Button android:text="OK" android:id="@+id/Button01" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_width="120dp" android:layout_marginTop="35dp"></Button><Button android:id="@+id/Button02" android:layout_height="wrap_content" android:text="Cancel" android:layout_width="120dp" android:layout_marginLeft="160dp" android:layout_marginTop="-49dp"></Button>
+
+
+
+
+
+
+
+</LinearLayout>

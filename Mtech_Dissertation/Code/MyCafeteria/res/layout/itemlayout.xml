@@ -1,0 +1,76 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="3"
+    android:rowCount="1"
+    android:orientation="horizontal"
+    tools:context=".ItemLevelListActivity" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_marginLeft="3dp"
+        android:layout_row="0"
+        android:gravity="center_vertical"
+        android:paddingTop="15sp" />
+
+<GridLayout
+    android:layout_width="219dp"
+    android:layout_column="1"
+    android:layout_gravity="top"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_row="0"
+    android:columnCount="1"
+    android:orientation="vertical"
+    android:paddingLeft="10sp"
+    android:rowCount="2" >
+  
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_column="0"
+         android:layout_gravity="start"
+         android:layout_row="0"
+         android:gravity="start"
+         android:paddingBottom="3sp"
+         android:paddingTop="5sp"
+         android:text="North indian meals"
+         android:textSize="20sp"
+         android:textStyle="bold" />
+  
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="start"
+        android:layout_row="1"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:paddingBottom="5sp"
+        android:paddingTop="3sp"
+        android:text="  + add as favourite "
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+</GridLayout>
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="54dp"
+       android:layout_column="2"
+       android:layout_gravity="end|top"
+       android:layout_marginEnd="3dp"
+       android:layout_marginRight="3dp"
+       android:layout_row="0"
+       android:gravity="center"
+       android:paddingRight="8sp"
+       android:paddingTop="15sp"
+       android:text="20.00"
+       android:textSize="18sp" />
+
+</GridLayout>

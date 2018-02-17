@@ -1,0 +1,66 @@
+<style>
+#tabOverview{
+	font-family:Proxima Nova Alt Sbold;font-size: 14px;color:#50b3cf;background:#fff;border: 1px solid #50b3cf;
+	border-bottom-color:#fff;height:30px;width:100px;margin-left:30px;padding-left: 20px;padding-top: 5px;
+}
+#lnkAdditem{
+		background:#6db33f;color:#ffffff;width:92px;height:24px;font-family:Proxima Nova Alt Sbold;font-size: 12px;
+    	-moz-box-shadow: 0 10px 10px -5px #387c2c;-webkit-box-shadow: 0 10px 10px -5px #387c2c;box-shadow: 0 10px 10px -5px #387c2c;
+		/* For IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#387c2c')";
+		/* For IE 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#387c2c');
+}
+.table
+{
+background:linear-gradient(to bottom,#F9F9F9 0,#efefef 100%);
+margin-bottom:0;
+}
+.boolStatusMsgTrue{
+	color: rgba(0, 0, 0, 0);background:url('css/icons/ok.png') no-repeat center center;cursor:pointer;
+}
+.boolStatusMsgFalse{
+	color: rgba(0, 0, 0, 0);background:url('css/icons/cross.png') no-repeat center center;cursor:pointer;
+}
+.editNameClass{
+	text-decoration: underline;cursor:pointer; padding-left:5px;
+}
+</style>
+
+<div ng-controller="VendorController" ng-init="loadItemDetails()" >
+	<div >
+	<h4 style="font-family:Proxima Nova Alt Sbold;font-size: 18px;color:#555555;  padding: 10px 0px 10px 25px;">{{vendorname}} - {{vendorlocation}}
+	</h4>
+		<h4 style="font-family:Proxima Nova Alt Sbold;font-size: 18px;color:#555555;  padding: 10px 0px 10px 25px;">List of Items</h4>
+	</div>
+<div style="margin-bottom:20px;height:30px;margin-left:15px;width:90%;">
+<a href="#/order"  id="lnkAdditem" class="easyui-linkbutton" >Order List</a>
+<a href="#/newitem" id="lnkAdditem" class="easyui-linkbutton" style="background:#6699FF;box-shadow:0 10px 10px -5px #6699FF;float: right;" >Add item</a>
+<a href="#/settings" id="lnkAdditem" class="easyui-linkbutton" style="background:#ff4000;box-shadow:0 10px 10px -5px #ff4000;float: right;" >Settings</a>
+		
+    <!-- <a style="margin-left:15px" href="#/login" class="easyui-linkbutton" >Logout</a> -->
+	</div>
+
+	 <div >       
+	  <div class="itemgrid" ui-grid="gridOptionsComplex" ui-grid-pagination ui-grid-move-columns ui-grid-auto-resize></div> 
+         </div>
+        * Note : Deleting items will delete items from orders also ,which are in expired status
+	</div>
+	
+     
+<script type="text/javascript">	
+		function formatDateInfo(val, row){
+			if(val!=null){
+				var date = new Date(val+' UTC');
+				var mth=date.getUTCMonth()+1;
+				var dateValue = ''	+ date.getUTCFullYear() + '-' + (date.getUTCMonth()+1) + '-'
+				+ date.getUTCDate() + ' '
+				+ date.getUTCHours() + ':'
+				+ date.getUTCMinutes() + ':'
+				+ date.getUTCSeconds();
+			   return dateValue;
+			}
+		}
+    </script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 24, 2014 11:17:39 AM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping package="com.mycafeteria.bean">
+    <class name="VendorMobile" table="vendor" >
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="Name" type="string">
+            <column name="name" length="100" />
+        </property>
+       
+              
+    </class>
+</hibernate-mapping>

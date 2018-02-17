@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.android.doctor"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Login"
+                  android:label="Doctor's Handbook">
+                   <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+                  </activity>
+        <activity android:name=".Entrypage"
+                  android:label="List of Patients and their IDs">
+                   </activity>
+           
+       
+      <activity android:name=".Show"
+               android:label="Prescription Detail">
+       </activity>
+       <activity android:name=".PrescriptionList"
+               android:label="List of Prescription - Based on Date">
+       </activity>
+       <activity android:name=".NewPrescription"
+               android:label="New Prescription Form">
+       </activity>
+      
+    </application>
+
+
+</manifest> 

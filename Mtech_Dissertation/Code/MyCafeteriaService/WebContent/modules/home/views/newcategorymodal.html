@@ -1,0 +1,106 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Category</title>
+<style type="text/css">
+.btnEnabled{
+    	 background:#6db33f;color:#ffffff;width:92px;height:24px;font-family:Proxima Nova Alt Sbold;font-size: 12px;    	    	
+    	-moz-box-shadow: 0 2px 0px 0px #387c2c;-webkit-box-shadow: 0 2px 0px 0px #387c2c;box-shadow:0px 2px 0px 0px #387c2c;
+		/* For IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#387c2c')";
+		/* For IE 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#387c2c');
+		border-top-left-radius:3px 3px;
+		border-bottom-right-radius:3px 3px;
+		border-top-right-radius:3px 3px;
+		border-bottom-left-radius:3px 3px;
+		border-color:#387c2c;
+		border-width:0px;
+    }
+.btnEnabled:hover{
+background:#7ccc47;color:#ffffff;width:92px;height:24px;font-family:Proxima Nova Alt Sbold;font-size: 12px;    	
+    	-moz-box-shadow: 0 2px 0px 0px #387c2c;-webkit-box-shadow: 0 2px 0px 0px #387c2c;box-shadow:0px 2px 0px 0px #387c2c;
+		/* For IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#387c2c')";
+		/* For IE 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#387c2c');
+		border-top-left-radius:3px 3px;
+		border-bottom-right-radius:3px 3px;
+		border-top-right-radius:3px 3px;
+		border-bottom-left-radius:3px 3px;
+		border-color:#387c2c;
+		border-width:0px;
+}  
+.cancelbtnEnabled{
+    	 background:#8c8c8c;color:#ffffff;width:92px;height:24px;font-family:Proxima Nova Alt Sbold;font-size: 12px;    	    	
+    	-moz-box-shadow: 0 2px 0px 0px #555555;-webkit-box-shadow: 0 2px 0px 0px #555555;box-shadow:0px 2px 0px 0px #555555;
+		/* For IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555')";
+		/* For IE 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#555555');
+		border-top-left-radius:3px 3px;
+		border-bottom-right-radius:3px 3px;
+		border-top-right-radius:3px 3px;
+		border-bottom-left-radius:3px 3px;
+		border-color:#555555;
+		border-width:0px;
+    }
+.cancelbtnEnabled:hover{
+background:#999;color:#ffffff;width:92px;height:24px;font-family:Proxima Nova Alt Sbold;font-size: 12px;    	
+    	-moz-box-shadow: 0 2px 0px 0px #555555;-webkit-box-shadow: 0 2px 0px 0px #555555;box-shadow:0px 2px 0px 0px #555555;
+		/* For IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555')";
+		/* For IE 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#555555');
+		border-top-left-radius:3px 3px;
+		border-bottom-right-radius:3px 3px;
+		border-top-right-radius:3px 3px;
+		border-bottom-left-radius:3px 3px;
+		border-color:#555555;
+		border-width:0px;
+}   
+
+.form-control:hover
+{
+background-color: #e1eff2;
+border-color:#9bc4cd;
+}
+.form-control
+{
+	font-family:Proxima Nova Alt Reg;
+    font-size:12px;
+}  
+</style>   
+
+</head>
+<body>
+
+<div  ng-controller="HomeController">
+   
+        <div class="modal-header"  style="font-size: 1.2em;color:#ffffff;font-family:Proxima Nova Alt Sbold;background:#50b3cf;">
+           <label style="font-size: 15px;">Add New Category</label>
+        </div>
+        <div class="modal-body" style="min-height:6em;padding:20px;font-family:Proxima Nova Alt Reg;color:#555555;"> 
+        <form id="form_cat" method="post" class="ng-pristine ng-invalid ng-invalid-required" novalidate >           
+       
+    		<div class="col-lg-12">
+   					<div class="col-lg-3">
+						<label style="font-size: 12px;">Category Name:</label>
+					</div>
+					<div class="col-lg-9">
+						<input type="text" ng-model="newcategoryname" class="ng-pristine ng-invalid ng-invalid-required" name ="name" required> <br>
+      <label class="error ng-hide" style="color: Red;" ng-show="newcategoryname.$error.required && submitted">Enter Category Name </label>
+					</div>
+	    		</div>
+             </form>
+        </div>
+        <div class="modal-footer"  style="padding:15px;text-align:center;margin-top:0;">
+            <button class="btnEnabled" ng-click="submitnewcategorymodal()">Ok</button>
+            <button class="cancelbtnEnabled" ng-click="closemodal()">Cancel</button>
+       
+        </div>  
+   
+</div>
+</body>
+</html>

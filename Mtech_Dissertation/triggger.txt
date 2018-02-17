@@ -1,0 +1,17 @@
+SET GLOBAL event_scheduler = ON;
+ 
+DELIMITER $$
+ 
+CREATE
+                EVENT `mycafeteria`.`paid_status`
+                ON SCHEDULE EVERY 1 day STARTS '2015-10-13 18:28:00'
+                DO BEGIN
+                UPDATE `mycafeteria`.`orderdetails` SET
+ 
+`orderstatus` = 'expired'
+WHERE `orderstatus` = 'paid';
+                   
+                END
+$$
+ 
+DELIMITER ;

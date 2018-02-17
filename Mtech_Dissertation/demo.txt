@@ -1,0 +1,8 @@
+apache:D:\krishna\apache-tomcat-7.0.61-windows-x64\apache-tomcat-7.0.61
+
+
+Note: Items cannot be deleted when orders are under printed/paid status. Only expired orders can be deleted. 
+
+C:\Users\gopal\Desktop\local- localhost deliverables -tested -12-12-2015
+
+
